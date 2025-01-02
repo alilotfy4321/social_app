@@ -1,5 +1,18 @@
 {
   "title":"تطبيق تواصل",
-  "Hello":"مرحبا",
-  "name":"علي لطفي"
+  "register":"انشاء حساب",
+  "login":"تسجيل الدخول",
+  "name":"الاسم",
+  "phone":"التليفون",
+  "email":"الايميل",
+  "password":"كلمه المرور",
+  "haveAnAccount":"لدي حساب",
+  "dontHaveAnAccount":"ليس لدي حساب ?",
+  "signUpwith":"انشاء حساب باستخدام:",
+  "enterName":"ادخل الاسم",
+  "enterPhone":"ادخل التليفون",
+  "enterEmail":"ادخل الايميل",
+  "enterPassword":"ادخل كلمه المرور",
+  "sendEmailVerification":"اعاده التحقق من الايميل!"
+
 }

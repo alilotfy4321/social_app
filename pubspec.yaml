@@ -38,7 +38,16 @@ dependencies:
    
   flutter_localizations:
         sdk: flutter
-  dio: ^5.7.0
+  dio: 
+  flutter_bloc: 
+  bloc: 
+  shared_preferences: 
+  fluttertoast: 
+  image_picker: 
+  conditional_builder_null_safety: 
+  font_awesome_flutter: 
+  cloud_firestore: 
+  firebase_auth: 
 
 dev_dependencies:
   flutter_test:

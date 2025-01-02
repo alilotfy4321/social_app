@@ -22,8 +22,24 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Hello": MessageLookupByLibrary.simpleMessage("مرحبا"),
-        "name": MessageLookupByLibrary.simpleMessage("علي لطفي"),
+        "dontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("ليس لدي حساب ?"),
+        "email": MessageLookupByLibrary.simpleMessage("الايميل"),
+        "enterEmail": MessageLookupByLibrary.simpleMessage("ادخل الايميل"),
+        "enterName": MessageLookupByLibrary.simpleMessage("ادخل الاسم"),
+        "enterPassword":
+            MessageLookupByLibrary.simpleMessage("ادخل كلمه المرور"),
+        "enterPhone": MessageLookupByLibrary.simpleMessage("ادخل التليفون"),
+        "haveAnAccount": MessageLookupByLibrary.simpleMessage("لدي حساب"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمه المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("التليفون"),
+        "register": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "sendEmailVerification":
+            MessageLookupByLibrary.simpleMessage("اعاده التحقق من الايميل!"),
+        "signUpwith":
+            MessageLookupByLibrary.simpleMessage("انشاء حساب باستخدام:"),
         "title": MessageLookupByLibrary.simpleMessage("تطبيق تواصل")
       };
 }

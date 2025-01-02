@@ -22,8 +22,23 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Hello": MessageLookupByLibrary.simpleMessage("Hello"),
-        "name": MessageLookupByLibrary.simpleMessage("Ali lotfy"),
+        "dontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Don\'t have an account ?"),
+        "email": MessageLookupByLibrary.simpleMessage("email"),
+        "enterEmail": MessageLookupByLibrary.simpleMessage("enter email"),
+        "enterName": MessageLookupByLibrary.simpleMessage("enter name"),
+        "enterPassword": MessageLookupByLibrary.simpleMessage("enter password"),
+        "enterPhone": MessageLookupByLibrary.simpleMessage("enter phone"),
+        "haveAnAccount":
+            MessageLookupByLibrary.simpleMessage("have an account"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "name": MessageLookupByLibrary.simpleMessage("name"),
+        "password": MessageLookupByLibrary.simpleMessage("password"),
+        "phone": MessageLookupByLibrary.simpleMessage("phone"),
+        "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "sendEmailVerification": MessageLookupByLibrary.simpleMessage(
+            "send email verfiction agian!"),
+        "signUpwith": MessageLookupByLibrary.simpleMessage("Sign Up with :"),
         "title": MessageLookupByLibrary.simpleMessage("Social App")
       };
 }

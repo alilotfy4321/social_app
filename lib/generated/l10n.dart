@@ -60,21 +60,141 @@ class S {
     );
   }
 
-  /// `Hello`
-  String get Hello {
+  /// `Register`
+  String get register {
     return Intl.message(
-      'Hello',
-      name: 'Hello',
+      'Register',
+      name: 'register',
       desc: '',
       args: [],
     );
   }
 
-  /// `Ali lotfy`
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `name`
   String get name {
     return Intl.message(
-      'Ali lotfy',
+      'name',
       name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `phone`
+  String get phone {
+    return Intl.message(
+      'phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `email`
+  String get email {
+    return Intl.message(
+      'email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password`
+  String get password {
+    return Intl.message(
+      'password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `have an account`
+  String get haveAnAccount {
+    return Intl.message(
+      'have an account',
+      name: 'haveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't have an account ?`
+  String get dontHaveAnAccount {
+    return Intl.message(
+      'Don\'t have an account ?',
+      name: 'dontHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up with :`
+  String get signUpwith {
+    return Intl.message(
+      'Sign Up with :',
+      name: 'signUpwith',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `enter name`
+  String get enterName {
+    return Intl.message(
+      'enter name',
+      name: 'enterName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `enter phone`
+  String get enterPhone {
+    return Intl.message(
+      'enter phone',
+      name: 'enterPhone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `enter email`
+  String get enterEmail {
+    return Intl.message(
+      'enter email',
+      name: 'enterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `enter password`
+  String get enterPassword {
+    return Intl.message(
+      'enter password',
+      name: 'enterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `send email verfiction agian!`
+  String get sendEmailVerification {
+    return Intl.message(
+      'send email verfiction agian!',
+      name: 'sendEmailVerification',
       desc: '',
       args: [],
     );

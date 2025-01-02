@@ -1,5 +1,18 @@
 {
   "title":"Social App",
-  "Hello":"Hello",
-  "name":"Ali lotfy"
+  "register":"Register",
+  "login":"Login",
+  "name":"name",
+  "phone":"phone",
+  "email":"email",
+  "password":"password",
+  "haveAnAccount":"have an account",
+  "dontHaveAnAccount":"Don't have an account ?",
+  "signUpwith":"Sign Up with :",
+  "enterName":"enter name",
+  "enterPhone":"enter phone",
+  "enterEmail":"enter email",
+  "enterPassword":"enter password",
+  "sendEmailVerification":"send email verfiction agian!"
+  
 }

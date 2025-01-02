@@ -1,5 +1,5 @@
 import 'package:intl/intl.dart';
-
+ String language = 'en';
 bool isArabic(){
     return Intl.getCurrentLocale()=='ar';
   }
