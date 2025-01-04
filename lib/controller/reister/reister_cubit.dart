@@ -8,7 +8,6 @@ import 'package:meta/meta.dart';
 import 'package:social_app/model/create_user_account.dart';
 import 'package:social_app/shared_in_app/constants.dart';
 
-
 part 'reister_state.dart';
 
 class SocialReisterCubit extends Cubit<SocialReisterStates> {
@@ -40,8 +39,13 @@ class SocialReisterCubit extends Cubit<SocialReisterStates> {
     FirebaseAuth.instance
         .createUserWithEmailAndPassword(email: email, password: password)
         .then((value) {
-       FirebaseAuth.instance.currentUser?.sendEmailVerification();
-      createUserAccount(name, phone, email, value.user!.uid);
+      FirebaseAuth.instance.currentUser?.sendEmailVerification();
+      createUserAccount(
+        name,
+        phone,
+        email,
+        value.user!.uid,
+      );
     }).catchError((e) {
       emit(UserRegisterErrorState(error: e.toString()));
     });

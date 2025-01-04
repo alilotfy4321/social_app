@@ -1,4 +1,4 @@
-// ignore_for_file: unused_local_variable, unused_import, use_key_in_widget_constructors, prefer_const_constructors, unnecessary_string_interpolations
+// ignore_for_file: unused_local_variable, unused_import, use_key_in_widget_constructors, prefer_const_constructors, unnecessary_string_interpolations, use_build_context_synchronously
 
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:dio/dio.dart';
@@ -13,10 +13,13 @@ import 'package:social_app/generated/l10n.dart';
 import 'package:social_app/shared_in_app/custom_widgets/toastWidget.dart';
 import 'package:social_app/shared_in_app/custom_widgets/vhSpace.dart';
 import 'package:social_app/view/authontication/register/register.dart';
+import 'package:social_app/view/social_layout/home/home.dart';
+import 'package:social_app/view/social_layout/social_layout.dart';
 
 import '../../../shared_in_app/custom_widgets/Navigation.dart';
 import '../../../shared_in_app/custom_widgets/customButton.dart';
 import '../../../shared_in_app/custom_widgets/customTextFormField.dart';
+import '../../../shared_in_app/sharedpref.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -30,7 +33,10 @@ class LoginScreen extends StatelessWidget {
         if (state is SocialLoginSuccessState) {
           if (FirebaseAuth.instance.currentUser!.emailVerified) {
             showToast(text: 'login succes', toaststate: ToastState.SUCSSES);
+            await CachHelper.saveUserCacheKey(
+                'uId', state.uid); // save user id in cache
             //goto home
+            navigateAndFinish(context, SocialLayout());
           } else {
             showToast(
                 text: 'Verify your email please!!',
@@ -116,8 +122,8 @@ class LoginScreen extends StatelessWidget {
 
                     VSpace(),
                     TextButton(
-                      onPressed: () async{
-                      await  FirebaseAuth.instance.currentUser!
+                      onPressed: () async {
+                        await FirebaseAuth.instance.currentUser!
                             .sendEmailVerification();
                       },
                       child: Text(S.of(context).sendEmailVerification),

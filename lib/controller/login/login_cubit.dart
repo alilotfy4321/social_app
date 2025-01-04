@@ -25,7 +25,11 @@ class SocialLoginCubit extends Cubit<SocialLoginStates> {
     emit(SocialLoginLoadingState());
     await FirebaseAuth.instance
         .signInWithEmailAndPassword(email: email, password: password).then((vaue){
-          emit(SocialLoginSuccessState());
+          emit(SocialLoginSuccessState(
+            uid: FirebaseAuth.instance.currentUser?.uid,
+          ));
+        }).catchError((e){
+          emit(SocialLoginErrorState());
         });
   }
 }

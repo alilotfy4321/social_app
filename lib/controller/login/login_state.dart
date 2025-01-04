@@ -4,10 +4,17 @@ part of 'login_cubit.dart';
 abstract class SocialLoginStates {}
 
 class SocialLoginInitial extends SocialLoginStates {}
+
 class ChangePasswordVisibilityState extends SocialLoginStates {}
+
 class SocialLoginChangeLanguageState extends SocialLoginStates {}
 
-
 class SocialLoginLoadingState extends SocialLoginStates {}
-class SocialLoginSuccessState extends SocialLoginStates {}
+
+class SocialLoginSuccessState extends SocialLoginStates {
+  String? uid;
+  SocialLoginSuccessState({required this.uid});
+
+}
+
 class SocialLoginErrorState extends SocialLoginStates {}

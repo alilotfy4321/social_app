@@ -1,8 +1,10 @@
 import 'package:intl/intl.dart';
- String language = 'en';
-bool isArabic(){
-    return Intl.getCurrentLocale()=='ar';
-  }
+
+String language = 'en';
+bool isDark = false;
+bool isArabic() {
+  return Intl.getCurrentLocale() == 'ar';
+}
   //example-----
   // Row(children: [
   //       Padding(
