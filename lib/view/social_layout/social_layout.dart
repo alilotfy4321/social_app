@@ -59,6 +59,8 @@ class SocialLayout extends StatelessWidget {
                     icon: Icon(AntDesign.home), label: 'Home'),
                 BottomNavigationBarItem(
                     icon: Icon(AntDesign.wechat), label: 'chats'),
+                    BottomNavigationBarItem(
+                    icon: Icon(Icons.post_add_sharp), label: 'Posts'),
                 BottomNavigationBarItem(
                     icon: Icon(AntDesign.user), label: 'Users'),
                 BottomNavigationBarItem(

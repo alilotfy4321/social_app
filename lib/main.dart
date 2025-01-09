@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 // ignore_for_file: camel_case_types, unused_local_variable
 
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -10,20 +9,23 @@ import 'package:social_app/controller/bloc_observer.dart';
 import 'package:social_app/controller/login/login_cubit.dart';
 import 'package:social_app/controller/reister/reister_cubit.dart';
 import 'package:social_app/controller/social_app/social_app_cubit.dart';
-import 'package:social_app/firebase_options.dart';
 import 'package:social_app/generated/l10n.dart';
 import 'package:social_app/shared_in_app/constants.dart';
 import 'package:social_app/shared_in_app/sharedpref.dart';
 import 'package:social_app/shared_in_app/themes.dart';
+import 'package:social_app/view/animation/animation.dart';
 import 'package:social_app/view/authontication/login/login.dart';
+import 'package:social_app/view/google_maps/test_map.dart';
 
 import 'view/social_layout/social_layout.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  // NotificationService notificationService = NotificationService();
+
   Bloc.observer = MyBlocObserver();
   Widget startWidget;
   await CachHelper.init();
@@ -35,7 +37,7 @@ void main() async {
   }
   runApp(
     MyApp(
-      startWidget: startWidget,
+      startWidget: MapScreen(),
     ),
   );
 }

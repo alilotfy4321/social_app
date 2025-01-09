@@ -15,4 +15,5 @@ bool isArabic() {
   //       Text(S.of(context).name),
   //     ],),
 
-//-----------------------------------------------------  
+//-----------------------------------------------------  googe key
+  final googleApiKey = 'AIzaSyCaCeIdaQX08SA9gN63lSgVLDLR1fpd1BQ';
